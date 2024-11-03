@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <!--  Title -->
+    <TextView
+        android:id="@+id/request_holiday_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request Holiday"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Date -->
+
+    <TextView
+        android:id="@+id/date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="72dp"
+        android:text="Date of holiday:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/request_holiday_title" />
+
+    <EditText
+        android:id="@+id/date_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="Enter date (DD/MM/YYYY)"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@id/date_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="32dp"
+        android:padding="12dp"
+       />
+
+    <!-- Length  -->
+    <TextView
+        android:id="@+id/length_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Length of holiday:"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/date_input"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"/>
+
+    <EditText
+        android:id="@+id/length_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter days"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/length_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="32dp"
+        android:padding="12dp"
+       />
+
+    <!-- Additional Info -->
+    <TextView
+        android:id="@+id/additional_info_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:importantForAutofill="no"
+        android:text="Additional information:"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/length_input"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"/>
+
+    <EditText
+        android:id="@+id/additional_info_input"
+        android:layout_width="353dp"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="32dp"
+        android:hint="Enter any additional details"
+        android:inputType="text"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/additional_info_label" />
+
+    <!-- Send  -->
+
+    <Button
+        android:id="@+id/send_request_button"
+        android:layout_width="213dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/design_default_color_primary"
+
+        android:text="Send"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/additional_info_input" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="163dp"
+        android:layout_height="48dp"
+        android:background="@color/black"
+        android:text="Back"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="601dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

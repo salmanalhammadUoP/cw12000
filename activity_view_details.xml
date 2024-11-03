@@ -1,0 +1,111 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+
+   >
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/detailsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View My Details"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <!-- Name Field -->
+    <TextView
+        android:id="@+id/nameField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Name: Salman Alahmmad"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/detailsHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Age Field -->
+    <TextView
+        android:id="@+id/ageField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Age: 19"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/nameField"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <!-- Salary Field -->
+    <TextView
+        android:id="@+id/salaryField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Salary: Automatic increase by 5%"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/ageField"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <!-- Address Field -->
+    <TextView
+        android:id="@+id/addressField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Address: "
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/salaryField"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <!-- Phone Field -->
+    <TextView
+        android:id="@+id/phoneField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Phone Number: "
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/addressField"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="212dp"
+        android:backgroundTint="@color/black"
+      
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phoneField" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
