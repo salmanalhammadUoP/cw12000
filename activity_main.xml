@@ -7,7 +7,7 @@
     android:background="@color/cardview_shadow_start_color"
    >
 
-    <!-- Company Title -->
+    <!-- Company  -->
     <TextView
         android:id="@+id/companyTitle"
         android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/companyTitle" />
-    <!-- Employee Button -->
+    <!-- Employee  -->
     <Button
         android:id="@+id/employeeButton"
         android:layout_width="224dp"
