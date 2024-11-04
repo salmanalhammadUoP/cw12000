@@ -6,7 +6,7 @@
     android:background="@color/cardview_shadow_start_color"
     android:padding="16dp">
 
-    <!-- Company Title -->
+    <!-- Company  -->
     <TextView
         android:id="@+id/companyTitle"
         android:layout_width="wrap_content"
