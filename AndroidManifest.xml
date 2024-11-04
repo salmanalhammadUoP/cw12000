@@ -11,7 +11,7 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
 
-        <!-- Set EmployeeLoginActivity as the launcher activity -->
+        <!--  launcher  -->
         <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
