@@ -14,10 +14,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Find the button by its ID
+
         Button employeeButton = findViewById(R.id.employeeButton);
 
-        // Set an OnClickListener on the button
         employeeButton.setOnClickListener(v -> {
             // Intent to navigate to EmployeeLoginActivity
             Intent intent = new Intent(MainActivity.this, EmployeeLoginActivity.class);
