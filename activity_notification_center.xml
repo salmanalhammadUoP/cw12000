@@ -9,7 +9,7 @@
 
     <!-- Title  -->
 
-    <!-- Turn Off -->
+   
 
     <TextView
         android:id="@+id/notification_center_title"
@@ -23,7 +23,7 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
+ <!-- Turn Off -->
     <Button
         android:id="@+id/turn_off_notifications_button"
         android:layout_width="wrap_content"
